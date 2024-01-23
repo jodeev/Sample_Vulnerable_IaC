@@ -1,10 +1,6 @@
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "my-test-terrascan-bucket"
   acl    = "private"
-
-  versioning {
-    enabled = true
-  }
 }
 
 resource "aws_vpc" "vpc-prod" {
